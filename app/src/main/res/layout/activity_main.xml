@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="LAB1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/applicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labNumber"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="BG Colour Changer"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicationName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="developed by Nikita Semenov"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/colorEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/authorName"
+        android:layout_marginTop="50dp"
+        android:hint="Enter color (red, green, blue)"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/startSecondActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorEditText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:onClick="startSecondActivity"
+        android:text="Start Second Activity" />
+
+    <ImageView
+        android:id="@+id/hseLogo"
+        android:layout_width="220dp"
+        android:layout_height="183dp"
+        android:layout_below="@+id/startSecondActivityButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/hselogoclear" />
+
+
+</RelativeLayout>
